@@ -18,8 +18,11 @@ namespace SimpleCalculatorMVC.Controllers
 
         public IActionResult Add(SimpleCalculatorViewModel viewModel)
         {
-            viewModel.Result =
-                viewModel.FirstNumber + viewModel.SecondNumber.ToString();
+            double sum = viewModel.FirstNumber + viewModel.SecondNumber;
+
+            
+            viewModel.Result = sum.ToString();
+
 
             return View("Index", viewModel);
         }

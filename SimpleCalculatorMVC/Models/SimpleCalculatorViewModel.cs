@@ -7,7 +7,5 @@
         public double SecondNumber { get; set; }
 
         public string Result { get; set; }
-
-
     }
 }
